@@ -1,0 +1,605 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", serif;
+}
+
+
+/* global color */
+:root {
+    /* nav color */
+    ---logo-1-color: #111111;
+    ---link-1-color: #FEA301;
+    ---link-2-color: #01ACFD;
+    ---link-3-color: #05D4DF;
+    ---link-4-color: #5D58EF;
+
+    /* banner color */
+    ---black-color: #111111;
+    ---skyblue-color: #01ACFD;
+    ---yellow-color: #FEA301;
+    ---white-color: #FFFFFF;
+
+
+}
+
+/* reset styles */
+.container {
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+main {
+    background: url('assets/bg.png');
+}
+
+header {
+    background: rgb(247, 247, 247);
+}
+
+.standard-section {
+    background: url('/assets/bg.png');
+}
+
+footer {
+    height: 32rem;
+    background: rgb(1, 172, 253);
+}
+
+
+
+
+/* nav styles */
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 3rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: .7rem;
+}
+
+.logo-image {
+    width: 3.8rem;
+    height: 3.7rem;
+
+}
+
+.logo-title {
+    color: rgb(17, 17, 17);
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.8rem;
+    letter-spacing: 0%;
+}
+
+
+
+.nav-list {
+    display: flex;
+    gap: 2rem;
+}
+
+li {
+    list-style: none;
+}
+
+li>a {
+    text-decoration: none;
+}
+
+.link-1 {
+    color: var(---link-1-color);
+    font-family: Quicksand;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.link-2 {
+    font-family: Quicksand;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0%;
+    text-align: left;
+    color: var(---link-2-color);
+
+}
+
+.link-3 {
+    font-family: Quicksand;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0%;
+    text-align: left;
+    color: var(---link-3-color);
+}
+
+.link-4 {
+    font-family: Quicksand;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0%;
+    text-align: left;
+    color: var(---link-4-color);
+}
+
+.primary-btn {
+    width: 12rem;
+    height: 3rem;
+    border: none;
+    padding: .67rem;
+    border: none;
+    background-color: var(---link-1-color);
+    border-radius: 12px;
+    font-family: Quicksand;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0%;
+}
+
+.primary-btn>a {
+    text-decoration: none;
+    color: white;
+
+
+}
+
+/* banner styles */
+
+.banner {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3.4rem;
+
+}
+
+.banner-content {
+    width: 40rem;
+    margin-top: 1rem;
+}
+
+.banner-title {
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    font-size: 3.5rem;
+
+}
+
+.span-1 {
+    font-weight: 700;
+    font-size: 3.5rem;
+    line-height: 3.81rem;
+    color: var(---yellow-color);
+}
+
+.span-2 {
+    font-weight: 700;
+    font-size: 3.5rem;
+    line-height: 3.81rem;
+    color: var(---skyblue-color);
+}
+
+.banner-description {
+    margin-bottom: 1.5rem;
+    width: 40rem;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.56rem;
+    color: #111111;
+}
+
+.banner-content .primary-btn {
+    background-color: #111111;
+}
+
+/* standard curriculum styles */
+.curriculum-list {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    gap: 5rem;
+    margin: 5rem 0;
+    background-image: url('assets/bg.png');
+}
+
+.curriculum-box-1 {
+    border: 0.06rem solid rgb(222, 245, 255);
+    padding: 3.75rem 0rem 3.75rem 0rem;
+    border-radius: 1.18rem;
+    box-shadow: inset 0rem 0rem 1.77rem 0.06rem rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(222, 245, 255), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
+}
+
+.curriculum-box-2 {
+    border: 0.06rem solid rgb(255, 244, 220);
+    padding: 3.75rem 0rem 3.75rem 0rem;
+    border-radius: 1.18rem;
+    box-shadow: inset 0rem 0rem 1.77rem 0.06rem rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(255, 244, 220), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
+}
+
+
+.curriculum-box-3 {
+    border: 0.06rem solid rgb(242, 232, 255);
+    padding: 3.75rem 0rem 3.75rem 0rem;
+    background: linear-gradient(180.00deg, rgb(238, 225, 255), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
+    box-shadow: inset 0rem 0rem 1.77rem 0.06rem rgba(0, 0, 0, 0.05);
+    border-radius: 1.18rem;
+}
+
+
+.title {
+    text-align: center;
+    margin-top: 3.75rem;
+    color: rgb(0, 0, 0);
+    font-family: Quicksand;
+    font-size: 2.88rem;
+    font-weight: 700;
+    line-height: 3.59rem;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.class-image {
+    width: 8.17rem;
+    height: 7rem;
+    margin-bottom: 1rem;
+}
+
+
+.heading {
+    color: rgb(32, 32, 32);
+    font-family: Quicksand;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.92rem;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+
+
+.info {
+    color: rgb(128, 128, 128);
+    font-family: "Raleway", serif;
+    font-size: 0.94rem;
+    font-weight: 500;
+    line-height: 1.77rem;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-bottom: 1rem;
+    width: 17.89rem;
+    height: 4.66rem;
+    padding: 0 .5rem;
+}
+
+.link--1 {
+
+    font-family: Quicksand;
+    font-size: 0.94rem;
+    font-weight: 700;
+    line-height: 1.77rem;
+    letter-spacing: 0%;
+    text-align: center;
+
+}
+
+.link--1>a {
+    text-decoration: none;
+    color: rgb(100, 200, 255);
+    margin-top: 1rem;
+}
+
+
+
+.link--2>a {
+    text-decoration: none;
+    color: rgb(240, 170, 0);
+    font-family: Quicksand;
+    font-size: 0.94rem;
+    font-weight: 700;
+    line-height: 1.77rem;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.link--3>a {
+    color: rgb(135, 0, 255);
+    font-family: Quicksand;
+    font-size: 0.94rem;
+    font-weight: 700;
+    line-height: 1.77rem;
+    letter-spacing: 0%;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 1rem;
+}
+
+
+
+.slider {
+    text-align: center;
+}
+
+.icon-btn a>img {
+    width: 1rem;
+    height: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 900;
+    line-height: 1.5rem;
+
+}
+
+.icon-btn {
+    width: 3.75rem;
+    height: 3.75rem;
+    border-radius: 50%;
+    border: none;
+    background-color: #FEA301;
+    margin-right: .5rem;
+    margin-bottom: 4rem;
+}
+
+/* story section */
+
+.stories-section {
+    display: flex;
+    gap: 2rem;
+    padding-bottom: 5rem;
+}
+
+#bg {
+    background: url('/assets/bg.png'), linear-gradient(0.00deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%);
+}
+
+
+.story-box {
+    margin-top: 4rem;
+    position: relative;
+    background-color: #FFFFFF;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+
+.story-box-2 {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: .5rem;
+}
+
+.stories {
+    width: 18rem;
+    height: 18.85rem;
+    position: relative;
+    background-color: #FFFFFF;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    margin-top: .7rem;
+}
+
+.story-image-1 {
+    border-radius: 1rem 1rem 0rem 0rem;
+}
+
+.story-btn {
+    width: 10.91rem;
+    height: 3rem;
+    left: 2.4rem;
+    top: 19.63rem;
+    border-radius: 3rem;
+    background: rgb(60, 216, 232);
+    border: none;
+    color: rgb(255, 255, 255);
+    font-family: Raleway;
+    font-size: 0.96rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    letter-spacing: 0%;
+    text-transform: capitalize;
+    position: absolute;
+}
+
+
+.story-image {
+    width: 18rem;
+    height: 11.06rem;
+    border-radius: 1rem 1rem 0rem 0rem;
+}
+
+.story-1-title {
+    color: rgb(0, 0, 0);
+    font-family: Quicksand;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 2.4rem;
+    letter-spacing: 0%;
+    margin-top: 2.5rem;
+    margin-left: 2.4rem;
+}
+
+.story-box .description {
+    margin-top: 2rem;
+    width: 27.07rem;
+    height: 4.73rem;
+    color: rgb(102, 102, 102);
+    font-family: Raleway;
+    font-size: 0.96rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    letter-spacing: 0%;
+    margin-left: 2.4rem;
+}
+
+.btn-1 {
+    width: 10.91rem;
+    border: none;
+    height: 2.4rem;
+    border-radius: 3rem;
+    background: rgb(149, 178, 38);
+    color: rgb(255, 255, 255);
+    font-family: Raleway;
+    font-size: 0.96rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    letter-spacing: 0%;
+    text-transform: capitalize;
+    position: absolute;
+    left: 2.4rem;
+    top: 9.86rem;
+}
+
+.story-title {
+
+    width: 12.38rem;
+    height: 3rem;
+    color: rgb(0, 0, 0);
+    font-family: Quicksand;
+    font-size: 0.96rem;
+    font-weight: 700;
+    line-height: 1.8rem;
+    letter-spacing: 0%;
+    margin-left: 2.4rem;
+    margin-top: 1.3rem;
+}
+
+
+.btn-2 {
+    width: 10.91rem;
+    border: none;
+    height: 2.4rem;
+    border-radius: 3rem;
+    background: rgb(93, 88, 240);
+    color: rgb(255, 255, 255);
+    font-family: Raleway;
+    font-size: 0.96rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    letter-spacing: 0%;
+    text-transform: capitalize;
+    position: absolute;
+    left: 2.4rem;
+    top: 9.86rem;
+}
+
+#bg {
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.primary-btn {
+
+    background-color: #111111;
+}
+
+
+/* footer styles */
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 8rem;
+}
+
+.content-part-1 {
+    width: 24rem;
+}
+
+.logo-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    gap: .5rem;
+}
+
+.footer-logo-img {}
+
+.titl-e {
+    line-height: 1em;
+    color: rgb(255, 255, 255);
+    font-family: Quicksand;
+    font-size: 2.63rem;
+    font-weight: 700;
+    line-height: 2.47rem;
+    letter-spacing: 0%;
+
+}
+
+.information {
+    color: rgb(255, 255, 255);
+    font-family: Quicksand;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.56rem;
+    letter-spacing: 0%;
+}
+
+.para {
+    color: rgb(255, 255, 255);
+    font-family: Quicksand;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.88rem;
+    letter-spacing: 0%;
+    margin-bottom: 1rem;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 1.5rem;
+    flex-direction: column;
+}
+
+
+
+.link {
+    color: rgb(255, 255, 255);
+    font-family: Quicksand;
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.56rem;
+    margin-top: 1.5rem;
+
+}
+
+
+.icons {
+    margin-top: 1.7rem;
+}
+
+.icon-img {
+    margin-right: .8rem;
+    width: 2.54rem;
+    height: 2.5rem;
+}
+
