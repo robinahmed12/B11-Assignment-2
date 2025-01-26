@@ -29,6 +29,10 @@
 }
 
 /* reset styles */
+.hide {
+    display: none;
+}
+
 .container {
     max-width: 1160px;
     margin: 0 auto;
@@ -51,6 +55,29 @@ footer {
     background: rgb(1, 172, 253);
 }
 
+/* reuseable styles */
+.primary-btn {
+    width: 12rem;
+    height: 3rem;
+    border: none;
+    padding: .67rem;
+    border: none;
+    background-color: var(---link-1-color);
+    border-radius: 12px;
+    font-family: Quicksand;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0%;
+}
+
+.primary-btn>a {
+    text-decoration: none;
+    color: white;
+
+
+}
+
 
 
 
@@ -62,6 +89,8 @@ footer {
     align-items: center;
     padding-top: 3rem;
 }
+
+
 
 .logo {
     display: flex;
@@ -139,7 +168,7 @@ li>a {
     color: var(---link-4-color);
 }
 
-.primary-btn {
+.nav-btn {
     width: 12rem;
     height: 3rem;
     border: none;
@@ -154,9 +183,67 @@ li>a {
     letter-spacing: 0%;
 }
 
-.primary-btn>a {
+.nav-btn>a {
     text-decoration: none;
     color: white;
+}
+
+
+
+.toggle-btn {
+    font-size: 2rem;
+    color: #5D58EF;
+    cursor: pointer;
+    display: none;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    width: 300px;
+    overflow: hidden;
+}
+
+.dropdown-menu li {
+    padding: .7rem;
+}
+
+/* responsive navbar */
+
+@media screen and (max-width: 576px) {
+
+    .nav-list,
+    .nav-btn {
+        display: none;
+    }
+
+    .toggle-btn {
+        display: block;
+        margin-right: 1rem;
+    }
+
+    .logo-image {
+        margin-left: 1rem;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+    .nav-list,
+    .nav-btn {
+        display: none;
+    }
+
+    .toggle-btn {
+        display: block;
+        margin-right: 1rem;
+    }
+
+    .logo-image {
+        margin-left: 1rem;
+    }
 
 
 }
@@ -209,6 +296,60 @@ li>a {
 
 .banner-content .primary-btn {
     background-color: #111111;
+}
+
+.banner-image img {
+    width: 100%;
+}
+
+.banner-description {
+    width: 22rem;
+}
+
+/* banner styles */
+
+@media screen and (max-width: 576px) {
+    .banner {
+        flex-direction: column-reverse;
+    }
+
+    .banner-content {
+        width: 22rem;
+    }
+
+    .span-1 {
+        font-size: 2.2rem;
+    }
+
+    .span-2 {
+        font-size: 2.2rem;
+    }
+
+    .banner-title {
+        font-size: 2.2rem;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .banner {
+        flex-direction: row-reverse;
+    }
+
+    .banner-image img {
+        height: 600px;
+    }
+
+    .span-1 {
+        font-size: 2.5rem;
+    }
+
+    .span-2 {
+        font-size: 2.5rem;
+    }
+
+    .banner-title {
+        font-size: 2.5rem;
+    }
 }
 
 /* standard curriculum styles */
@@ -343,24 +484,148 @@ li>a {
     text-align: center;
 }
 
-.icon-btn a>img {
-    width: 1rem;
-    height: 1.5rem;
+.slider .icon-btn {
+    width: 3.75rem;
+    height: 3.75rem;
+    background: rgb(254, 163, 1);
+    border: none;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin-right: .5rem;
+}
+
+a>i {
+    color: #FFFFFF;
     font-size: 1.5rem;
     font-weight: 900;
     line-height: 1.5rem;
-
+    letter-spacing: 0%;
 }
 
-.icon-btn {
-    width: 3.75rem;
-    height: 3.75rem;
-    border-radius: 50%;
-    border: none;
-    background-color: #FEA301;
-    margin-right: .5rem;
-    margin-bottom: 4rem;
+/* standard section responsive */
+
+@media screen and (max-width: 576px) {
+    .curriculum-list {
+        flex-direction: column;
+    }
 }
+
+@media screen and (min-width: 768px)  and (max-width: 992px) {
+    .curriculum-list{
+        flex-direction: column;
+    }
+
+    .curriculum-box-1 {
+        border: 0.06rem solid rgb(222, 245, 255);
+        padding: 6rem 6rem 6rem 6rem;
+        border-radius: 1.18rem;
+        box-shadow: inset 0rem 0rem 1.77rem 0.06rem rgba(0, 0, 0, 0.05);
+        background: linear-gradient(180.00deg, rgb(222, 245, 255), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
+    }
+    
+    .curriculum-box-2 {
+        border: 0.06rem solid rgb(255, 244, 220);
+        padding: 6rem 6rem 6rem 6rem;
+        border-radius: 1.18rem;
+        box-shadow: inset 0rem 0rem 1.77rem 0.06rem rgba(0, 0, 0, 0.05);
+        background: linear-gradient(180.00deg, rgb(255, 244, 220), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
+    }
+    
+    
+    .curriculum-box-3 {
+        border: 0.06rem solid rgb(242, 232, 255);
+        padding: 6rem 6rem 6rem 6rem;
+        background: linear-gradient(180.00deg, rgb(238, 225, 255), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
+        box-shadow: inset 0rem 0rem 1.77rem 0.06rem rgba(0, 0, 0, 0.05);
+        border-radius: 1.18rem;
+    }
+
+    .title {
+        text-align: center;
+        margin-top: 3.75rem;
+        color: rgb(0, 0, 0);
+        font-family: Quicksand;
+        font-size: 4rem;
+        font-weight: 700;
+        line-height: 3.59rem;
+        letter-spacing: 0%;
+        text-align: center;
+    }
+    
+    .class-image {
+        width: 15rem;
+        height: 15rem;
+        margin-bottom: 1rem;
+    }
+    
+    
+    .heading {
+        color: rgb(32, 32, 32);
+        font-family: Quicksand;
+        font-size: 2.5rem;
+        font-weight: 700;
+        line-height: 1.92rem;
+        letter-spacing: 0%;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    
+    
+    
+    .info {
+        color: rgb(128, 128, 128);
+        font-family: "Raleway", serif;
+        font-size: 1.5rem;
+        font-weight: 500;
+        line-height: 1.77rem;
+        letter-spacing: 0%;
+        text-align: center;
+        margin-bottom: 4rem;
+        width: 20rem;
+        height: 4.66rem;
+        padding: 0 .5rem;
+    }
+
+    .link--1>a {
+        text-decoration: none;
+        color: rgb(100, 200, 255);
+        font-size: 1.2rem;
+
+    }
+    
+    
+    
+    .link--2>a {
+        text-decoration: none;
+        color: rgb(240, 170, 0);
+        font-family: Quicksand;
+        font-size: 1.3rem;
+        font-weight: 700;
+        line-height: 1.77rem;
+        letter-spacing: 0%;
+        text-align: center;
+        margin-top: 1rem;
+    }
+    
+    .link--3>a {
+        color: rgb(135, 0, 255);
+        font-family: Quicksand;
+        font-size: 1.2rem;
+        font-weight: 700;
+        line-height: 1.77rem;
+        letter-spacing: 0%;
+        text-align: center;
+        text-decoration: none;
+        margin-top: 1rem;
+    }
+    
+    
+    
+}
+
 
 /* story section */
 
@@ -520,6 +785,9 @@ li>a {
     background-color: #111111;
 }
 
+/* story-section responsive */
+
+
 
 /* footer styles */
 
@@ -602,4 +870,3 @@ li>a {
     width: 2.54rem;
     height: 2.5rem;
 }
-

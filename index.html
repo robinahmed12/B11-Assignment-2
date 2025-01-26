@@ -4,14 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Kid's School</title>
     <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
 </head>
 
 <body>
-    <header>
+    <header class="hide">
         <div class="container">
             <nav class="nav-bar">
                 <div class="logo">
@@ -25,12 +26,23 @@
                     <li><a href="" class="link-3">Facilities</a></li>
                     <li><a href="" class="link-4">Admission</a></li>
                 </ul>
-                <button class="primary-btn"><a href="">Contact Now</a></button>
+                <button class="nav-btn"><a href="">Contact Now</a></button>
+
+                <div class="toggle-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+
+                <div class="dropdown-menu">
+                    <li><a href="" class="link-1">Home</a></li>
+                    <li><a href="" class="link-2">About</a></li>
+                    <li><a href="" class="link-3">Facilities</a></li>
+                    <li><a href="" class="link-4">Admission</a></li>
+                    <button class="nav-btn"><a href="">Contact Now</a></ </div>
 
             </nav>
 
 
-            <div class="banner">
+            <div class="banner" class="hide">
                 <div class="banner-content">
                     <h1 class="banner-title">
                         <span class="span-1">Empowering</span><br>
@@ -49,7 +61,7 @@
 
     <body>
         <main>
-            <section class="standard-section">
+            <section class="standard-section hide">
                 <div class="container">
 
                     <h1 class="title">Standard Curriculum</h1>
@@ -96,19 +108,11 @@
 
                     <div class="slider">
 
-                        <button class="icon-btn">
 
-                            <a href=""> <img src="assets/greater-than (1).png" alt="" srcset="">
-                            </a>
+                        <button class="icon-btn"><a href=""><i class="fa-solid fa-greater-than"></i></a></button>
+                        <button class="icon-btn"><a href=""><i class="fa-solid fa-less-than"></i></a></button>
 
-                        </button>
 
-                        <button class="icon-btn">
-
-                            <a href="">
-                                <img src="assets/less-than (1).png" alt="" srcset="">
-                            </a>
-                        </button>
                     </div>
 
 
@@ -118,78 +122,79 @@
 
             <section id="bg">
                 <div class="container">
-                    
+
                     <h1 class="title">
                         Our Stories
                     </h1>
-                    
+
                     <div class="stories-section">
                         <div class="story-box">
                             <img class="story-image-1" src="assets/story-1.png" alt="" srcset="">
-                            <button class="story-btn">November 19, 2019</button>
+                            <button class="story-btn">August 20, 2024</button>
                             <h1 class="story-1-title">A fun toddler coloring training on
                                 classroom</h1>
                             <p class="description">
-                                Beautiful branding for changes by Never Now in Australia.
-                                changes is a platform for open discussion in an inclusive and
-                                collaborative environment, providing the...
+                                Our classroom equipped with desks and chairs arranged in rows, clusters, or a U-shape to
+                                accommodate students.The teacher’s desk or podium is usually positioned at the front.
                             </p>
                         </div>
 
 
                         <div class="story-box-2">
                             <div class="stories">
-                                <img class="story-image"  src="assets/story-2.png" alt="" srcset="">
-                                <button class="btn-1">November 19, 2019</button>
-                                <h1 class="story-title">Find out if a school fits the
-                                    family’s needs</h1>
+                                <img class="story-image" src="assets/story-2.png" alt="" srcset="">
+                                <button class="btn-1">October 15, 2024</button>
+                                <h1 class="story-title">Modern classrooms include technology such as computers, tablets.
+                                </h1>
                             </div>
 
                             <div class="stories">
                                 <img class="story-image" src="assets/story-3.png" alt="" srcset="">
-                                <button class="btn-1">November 19, 2019</button>
-                                <h1 class="story-title">Find out if a school fits the
-                                    family’s needs</h1>
+                                <button class="btn-1">November 30, 2024</button>
+                                <h1 class="story-title"> quiet and organized, promoting focus and discipline.
+                                </h1>
                             </div>
 
 
                             <div class="stories">
                                 <img class="story-image" src="assets/story-4.png" alt="" srcset="">
-                                <button class="btn-2">November 19, 2019</button>
-                                <h1 class="story-title">Find out if a school fits the
-                                    family’s needs</h1>
+                                <button class="btn-2">December 25, 2024</button>
+                                <h1 class="story-title"> supportive diverse learning methods, including lectures.
+                                </h1>
                             </div>
 
                             <div class="stories">
                                 <img class="story-image" src="assets/story-5.png" alt="" srcset="">
-                                <button class="btn-2" >November 19, 2019</button>
-                                <h1 class="story-title">Find out if a school fits the
-                                    family’s needs</h1>
+                                <button class="btn-2">January 19, 2025</button>
+                                <h1 class="story-title">Tools like whiteboards, smartboards, projectors, or bulletin
+                                    boards
+                                </h1>
                             </div>
-                            
+
 
 
                         </div>
                     </div>
                     <div id="btn">
                         <button class="primary-btn"><a href="">Enroll Now</a></button>
-                       </div>
+                    </div>
 
                 </div>
             </section>
-            
+
         </main>
     </body>
-    <footer>
+    <footer class="hide">
         <div class="container">
             <div class="footer-content">
                 <div class="content-part-1">
                     <div class="logo-title">
                         <img class="footer-logo-img" src="assets/logo.png" alt="" srcset="">
-                    <h1 class="titl-e">Kids
-                        Education</h1>
+                        <h1 class="titl-e">Kids
+                            Education</h1>
                     </div>
-                    <p class="information">Pizza ipsum dolor meat lovers buffalo. Deep dolor roll melted bacon Bianca pan bacon pineapple Aussie. Mayo rib sauce Hawaiian meatball.</p>
+                    <p class="information">Pizza ipsum dolor meat lovers buffalo. Deep dolor roll melted bacon Bianca
+                        pan bacon pineapple Aussie. Mayo rib sauce Hawaiian meatball.</p>
                 </div>
 
                 <div class="content-part-2">
