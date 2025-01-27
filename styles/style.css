@@ -512,7 +512,7 @@ a>i {
         flex-direction: column;
     }
 
-    .slider {
+    .slider , .icon-btn {
         display: none;
     }
 }
