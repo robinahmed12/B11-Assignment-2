@@ -790,6 +790,16 @@ a>i {
 #story-5,
 #story-6 {
     display: none;
+    width: 18rem;
+    height: 18.85rem;
+    position: relative;
+    background-color: #FFFFFF;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    margin-top: .7rem;
 }
 
 /* story-section responsive */
@@ -865,7 +875,6 @@ a>i {
         height: 17rem;
         background-color: #FFFFFF;
         margin-left: .3rem;
-        position: relative;
         background-color: #FFFFFF;
         border-radius: 1rem;
         -webkit-border-radius: 1rem;
