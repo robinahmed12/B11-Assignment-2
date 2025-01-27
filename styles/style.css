@@ -71,12 +71,41 @@ footer {
     letter-spacing: 0%;
 }
 
+.primary-btn:hover{
+    background-color: var(---link-1-color);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -webkit-transition: transform 0.3s ease, background-color 0.3s ease;
+    -moz-transition: transform 0.3s ease, background-color 0.3s ease;
+    -ms-transition: transform 0.3s ease, background-color 0.3s ease;
+    -o-transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
 .primary-btn>a {
     text-decoration: none;
     color: white;
 
 
 }
+
+.nav-btn:hover{
+    background-color: var(---link-4-color);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -webkit-transition: transform 0.3s ease, background-color 0.3s ease;
+    -moz-transition: transform 0.3s ease, background-color 0.3s ease;
+    -ms-transition: transform 0.3s ease, background-color 0.3s ease;
+    -o-transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
 
 
 
