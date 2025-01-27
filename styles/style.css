@@ -513,8 +513,8 @@ a>i {
     }
 }
 
-@media screen and (min-width: 768px)  and (max-width: 992px) {
-    .curriculum-list{
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .curriculum-list {
         flex-direction: column;
     }
 
@@ -525,7 +525,7 @@ a>i {
         box-shadow: inset 0rem 0rem 1.77rem 0.06rem rgba(0, 0, 0, 0.05);
         background: linear-gradient(180.00deg, rgb(222, 245, 255), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
     }
-    
+
     .curriculum-box-2 {
         border: 0.06rem solid rgb(255, 244, 220);
         padding: 6rem 6rem 6rem 6rem;
@@ -533,8 +533,8 @@ a>i {
         box-shadow: inset 0rem 0rem 1.77rem 0.06rem rgba(0, 0, 0, 0.05);
         background: linear-gradient(180.00deg, rgb(255, 244, 220), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
     }
-    
-    
+
+
     .curriculum-box-3 {
         border: 0.06rem solid rgb(242, 232, 255);
         padding: 6rem 6rem 6rem 6rem;
@@ -554,14 +554,14 @@ a>i {
         letter-spacing: 0%;
         text-align: center;
     }
-    
+
     .class-image {
         width: 15rem;
         height: 15rem;
         margin-bottom: 1rem;
     }
-    
-    
+
+
     .heading {
         color: rgb(32, 32, 32);
         font-family: Quicksand;
@@ -572,9 +572,9 @@ a>i {
         text-align: center;
         margin-bottom: 1rem;
     }
-    
-    
-    
+
+
+
     .info {
         color: rgb(128, 128, 128);
         font-family: "Raleway", serif;
@@ -595,9 +595,9 @@ a>i {
         font-size: 1.2rem;
 
     }
-    
-    
-    
+
+
+
     .link--2>a {
         text-decoration: none;
         color: rgb(240, 170, 0);
@@ -609,7 +609,7 @@ a>i {
         text-align: center;
         margin-top: 1rem;
     }
-    
+
     .link--3>a {
         color: rgb(135, 0, 255);
         font-family: Quicksand;
@@ -621,9 +621,9 @@ a>i {
         text-decoration: none;
         margin-top: 1rem;
     }
-    
-    
-    
+
+
+
 }
 
 
@@ -649,6 +649,8 @@ a>i {
     -moz-border-radius: 1rem;
     -ms-border-radius: 1rem;
     -o-border-radius: 1rem;
+    width: 33.77rem;
+    height: 39.41rem;
 }
 
 .story-box-2 {
@@ -785,8 +787,94 @@ a>i {
     background-color: #111111;
 }
 
+#story-5,
+#story-6 {
+    display: none;
+}
+
 /* story-section responsive */
 
+@media screen and (max-width: 576px) {
+    .story-box {
+        display: none;
+    }
+
+    .stories-section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .story-box-2 {
+        gap: 2rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .stories {
+        width: 11.5rem;
+        height: 17rem;
+        background-color: #FFFFFF;
+        margin-left: .3rem;
+    }
+
+    .story-image {
+        width: 11.5rem;
+        height: 11.22rem;
+
+    }
+
+    .btn-1 {
+        width: 6.49rem;
+        height: 1.43rem;
+        font-size: 0.57rem;
+        font-weight: 500;
+        margin-top: .5rem;
+    }
+
+    .btn-2 {
+        width: 6.49rem;
+        height: 1.43rem;
+        font-size: 0.57rem;
+        font-weight: 500;
+        margin-top: .5rem;
+    }
+
+    .story-title {
+
+        width: 7rem;
+        height: 1.78rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        color: rgb(0, 0, 0);
+        font-family: Quicksand;
+        font-size: 0.57rem;
+        font-weight: 700;
+        line-height: 1.07rem;
+        letter-spacing: 0%;
+        padding-top: .5rem;
+    }
+
+
+    #story-5,
+    #story-6 {
+        display: inline;
+        width: 11.5rem;
+        height: 17rem;
+        background-color: #FFFFFF;
+        margin-left: .3rem;
+        position: relative;
+        background-color: #FFFFFF;
+        border-radius: 1rem;
+        -webkit-border-radius: 1rem;
+        -moz-border-radius: 1rem;
+        -ms-border-radius: 1rem;
+        -o-border-radius: 1rem;
+        margin-top: .7rem;
+    }
+}
 
 
 /* footer styles */
@@ -870,3 +958,62 @@ a>i {
     width: 2.54rem;
     height: 2.5rem;
 }
+
+/* footer responsive */
+
+@media screen and (max-width: 576px) {
+    .footer-content {
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        height: 40rem;
+        width: 24rem;
+        margin: 0 auto;
+    }
+
+    .content-part-1 .logo-title {
+
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        margin-bottom: 1rem;
+        gap: .5rem;
+    }
+
+    
+.content-part-1 .information {
+    width: 17rem;
+    height: 5rem;
+    left: 1.31rem;
+    top: 177.13rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+}
+
+
+.titl-e {
+    width: 10.75rem;
+    height: 4.19rem;
+    left: 5.88rem;
+    top: 171.44rem;
+    font-size: 2.23rem;
+    font-weight: 700;
+    line-height: 2.09rem;
+}
+
+.content-part-2 {
+    margin-top: 3.5rem;
+}
+
+.content-part-3 {
+    margin-top: 3.5rem;
+}
+
+footer {
+    height: 45rem;
+    background: rgb(1, 172, 253);
+}
+}
+
+
